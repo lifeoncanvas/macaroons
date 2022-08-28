@@ -1,0 +1,294 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400&family=Montserrat:wght@100;200;300&display=swap'); 
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+:root {
+    --WorkSans-font: 'Work Sans', sans-serif;
+    --Bitter: 'Bitter', serif;
+    --Mon: 'Montserrat', sans-serif;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to top, #DD5E89 0%, #F7BB97  51%, #DD5E89  100%);
+
+    --light-gray: rgba(255, 255, 255, 0.25);
+}
+
+header a {
+    font-family: var(--Mon);
+    font-size: 0.9rem;
+
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: #ddd;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.nav-item:last-child {
+    padding-right: 5rem;
+}
+
+.nav-item {
+    padding: 0.2em;
+}
+
+.navbar-brand {
+    padding-left: 5rem;
+   
+}
+
+.nav-link:hover {
+    color: pink;
+}
+
+
+
+header.row.right {
+    padding: 4.2vmin 1vmin;
+    /* Viewport Minimum (vmin). This unit is based on the smaller dimension of the viewport. If the viewport height is smaller than the width, the value of 1vmin will be equal to 1% of the viewport height. */
+}
+
+header.row.left {
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+    
+}
+
+.left{
+    font-family: var(--Bitter);
+}
+
+.left h6{
+    padding: 1vmin;
+    letter-spacing: 4px;
+    color: gray;
+    font-family: var(--Mon);
+}
+.left h1{
+    font-size: 8.5vmin;
+    font-weight: 400;
+    padding:0.1em 0em;
+}
+
+header .row .right img{
+  width: 30rem;
+  height:35rem ;
+  object-fit: cover;
+  object-position: 0 92%;
+}
+
+
+ button{
+    background: linear-gradient(to right, #DD5E89 0%, #F7BB97  51%, #DD5E89  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    color: white;            
+    margin-top: 3rem;
+    border-radius: 10px;
+
+}
+
+
+ button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+  .section-1{
+    background: linear-gradient(to top, #DD5E89 0%, #F7BB97  51%, #DD5E89  100%);
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    height: 100vh;
+    padding-top: 3rem;
+}
+
+/* .section-1 .row .right img{
+    width: 30rem;
+    height:35rem ;
+    object-fit: cover;
+    object-position: 0 92%;
+  } */
+
+  .panel{
+    font-family: var(--Bitter);
+    font-weight: 300;
+    color: white;
+  }
+
+  .panel h1{
+    border-bottom: #DD5E89 solid;
+    padding-bottom: 1.5rem;
+  } 
+
+  .panel p{
+   
+    font-family: var(--Mon);
+    font-size: 1rem;
+    font-weight: 500;
+    /* letter-spacing: 0.25rem; */
+}
+
+.left img{
+    width: 25rem;
+    height:25rem ;
+    margin: 2rem;;
+    object-fit: cover;
+    object-position: 0 92%; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 2%;
+}
+
+/* section-2 */
+
+.section-2{
+   
+}
+
+.cover{
+    width:100%;
+    height:45vmin ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background:url('../images/img1.jpg');
+    background-size: 150%;
+    position:relative;    */
+}
+
+.cover p{
+    padding: 1vmin;
+    letter-spacing: 3px;
+    color: gray;
+    font-family: var(--Mon);
+}
+
+.cover h1{
+    font-family: var(--Bitter);
+    font-size: 8.5vmin;
+    font-weight: 400;
+    padding:0.1em 0em;
+}
+
+.rect{
+    position:relative;
+    z-index: 1;
+    background: var(--bggradient) ;
+    width: 8.5rem;
+    height: 8.5rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.rect h1{
+    font-size: 2.5rem;
+    color: #fff;
+   font-family: var(--Bitter);
+
+
+}
+
+.rect p{
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    font-family: var(--Mon);
+}
+
+/* footer */
+
+footer{
+    margin-top: 5rem;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    background: #F7BB97;
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+
+.col-md-5 h1,
+.col-md-5 h4,
+.col-md-2 h4 {
+    font-size: 2rem;
+    color: #DD5E89;
+   font-family: var(--Bitter);
+}
+
+.col-md-5 p,
+.col-md-5 p,
+.col-md-2 p{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: white;
+    font-family: var(--Mon);
+    line-height: 2rem;
+}
+
+
+
+.input-group-text{
+    background: linear-gradient(to right, #DD5E89 0%, #F7BB97  51%, #DD5E89  100%);
+    transition: 0.5s;
+}
+
+.input-group-text:hover{
+    background-position: right center;  
+}
+
+/* Contact */
+
+
+
+.contact.right img{
+   
+}
+
+.contact h1{
+    margin-left: 2rem;
+}
+
+.contact-img{
+   
+}
+
+.form-row{
+    width: 60vmin;
+    margin-left: 2rem;
+    
+}
+
+
+
+
